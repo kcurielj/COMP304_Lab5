@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">KCJM_COMP304Sec001_Lab5_Ex1</string>
+
+    <string-array name="Cuisine">
+
+        <item>Italian</item>
+        <item>Greek</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Indian</item>
+    </string-array>
+
+    <string-array name="Italian">
+
+        <item>Italian Restaurant 1</item>
+        <item>Italian Restaurant 2</item>
+        <item>Italian Restaurant 3</item>
+        <item>Italian Restaurant 4</item>
+        <item>Italian Restaurant 5</item>
+    </string-array>
+
+    <string-array name="Greek">
+
+        <item>Greek Restaurant 1</item>
+        <item>Greek Restaurant 2</item>
+        <item>Greek Restaurant 3</item>
+        <item>Greek Restaurant 4</item>
+        <item>Greek Restaurant 5</item>
+    </string-array>
+
+    <string-array name="Japanese">
+
+        <item>Japanese Restaurant 1</item>
+        <item>Japanese Restaurant 2</item>
+        <item>Japanese Restaurant 3</item>
+        <item>Japanese Restaurant 4</item>
+        <item>Japanese Restaurant 5</item>
+    </string-array>
+
+    <string-array name="Korean">
+
+        <item>Korean Restaurant 1</item>
+        <item>Korean Restaurant 2</item>
+        <item>Korean Restaurant 3</item>
+        <item>Korean Restaurant 4</item>
+        <item>Korean Restaurant 5</item>
+    </string-array>
+
+    <string-array name="Indian">
+
+        <item>Indian Restaurant 1</item>
+        <item>Indian Restaurant 2</item>
+        <item>Indian Restaurant 3</item>
+        <item>Indian Restaurant 4</item>
+        <item>Indian Restaurant 5</item>
+    </string-array>
+    <string name="title_activity_restaurant">RestaurantActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
