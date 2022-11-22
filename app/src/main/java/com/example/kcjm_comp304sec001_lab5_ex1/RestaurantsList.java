@@ -36,33 +36,11 @@ public class RestaurantsList extends ListActivity {
                 android.R.layout.simple_list_item_1, activities));
     }
 
-    public void onListItemClick(
-            ListView parent, View v, int position, long id)
+    public void onListItemClick(ListView parent, View v, int position, long id)
     {
         Intent i=null;
-        switch (position)
-        {
-            case 0:
-                i = new Intent(this, RestaurantsList.class);
-                i.putExtra("Type", R.array.Italian);
-                break;
-            case 1:
-                i = new Intent(this, RestaurantsList.class);
-                i.putExtra("Type", R.array.Greek);
-                break;
-            case 2:
-                i = new Intent(this, RestaurantsList.class);
-                i.putExtra("Type", R.array.Japanese);
-                break;
-            case 3:
-                i = new Intent(this, RestaurantsList.class);
-                i.putExtra("Type", R.array.Korean);
-                break;
-            case 4:
-                i = new Intent(this, RestaurantsList.class);
-                i.putExtra("Type", R.array.Indian);
-                break;
-        }
+        i = new Intent(this, RestaurantMapActivity.class);
+        i.putExtra("RestaurantName", activities[position]);
         startActivity(i);
 
     }
