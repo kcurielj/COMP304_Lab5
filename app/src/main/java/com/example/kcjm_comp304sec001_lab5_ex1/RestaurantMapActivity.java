@@ -1,26 +1,41 @@
 package com.example.kcjm_comp304sec001_lab5_ex1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class RestaurantMapActivity extends AppCompatActivity {
+import androidx.fragment.app.FragmentActivity;
 
-    String restaurantName;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+public class RestaurantMapActivity extends FragmentActivity implements OnMapReadyCallback {
+    private GoogleMap mMap;
+
+    String restaurant;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant_map);
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+    }
 
-        if (savedInstanceState == null) {
-            Bundle extras = getIntent().getExtras();
-            if (extras == null) {
-                restaurantName = null;
-            } else {
-                restaurantName = extras.getString("RestaurantName");
-            }
-        }
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+        restaurant = getIntent().getExtras().getString("Restaurant");
+        String[] restaurantBody = restaurant.split(",");
 
+
+        LatLng restaurant = new LatLng(Double.parseDouble(restaurantBody[1]), Double.parseDouble(restaurantBody[2]));
+        mMap.addMarker(new MarkerOptions().position(restaurant).title(restaurantBody[0]));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(restaurant,12f));
 
     }
 }

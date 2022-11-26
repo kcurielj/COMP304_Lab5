@@ -1,7 +1,5 @@
 package com.example.kcjm_comp304sec001_lab5_ex1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,15 +30,22 @@ public class RestaurantsList extends ListActivity {
         lstView.setTextFilterEnabled(true);
         //populate the array activities
         activities = getResources().getStringArray(restaurantType);
+        String[] nameOnly = new String[5];
+        for (int i = 0; i < activities.length; i++) {
+            String activity = activities[i];
+            nameOnly[i] = activity.split(",")[0];
+        }
+
         setListAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, activities));
+                android.R.layout.simple_list_item_1, nameOnly));
     }
 
-    public void onListItemClick(ListView parent, View v, int position, long id)
-    {
-        Intent i=null;
+    public void onListItemClick(ListView parent, View v, int position, long id) {
+        Intent i = null;
         i = new Intent(this, RestaurantMapActivity.class);
-        i.putExtra("RestaurantName", activities[position]);
+        i.putExtra("Restaurant", activities[position]);
+
+
         startActivity(i);
 
     }

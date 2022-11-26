@@ -10,13 +10,13 @@
         <item>Indian</item>
     </string-array>
 
-    <string-array name="Italian">
+        <string-array name="Italian">
 
-        <item>Italian Restaurant 1</item>
-        <item>Italian Restaurant 2</item>
-        <item>Italian Restaurant 3</item>
-        <item>Italian Restaurant 4</item>
-        <item>Italian Restaurant 5</item>
+        <item>Jimmy The Greek,43.768665,-79.3514651</item>
+        <item>Mr. Souvlaki,43.7526382,-79.324328</item>
+        <item>Nostos Bar &amp; Grill,43.774982,-79.2920485</item>
+        <item>Molon Lave Taverna,43.7527102,-79.3465518</item>
+        <item>Kathys Grill,43.761564,-79.3502837</item>
     </string-array>
 
     <string-array name="Greek">
