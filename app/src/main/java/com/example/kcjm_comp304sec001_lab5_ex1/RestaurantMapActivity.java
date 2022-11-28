@@ -1,6 +1,7 @@
 package com.example.kcjm_comp304sec001_lab5_ex1;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -24,6 +25,9 @@ public class RestaurantMapActivity extends FragmentActivity implements OnMapRead
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+
     }
 
     @Override
@@ -32,6 +36,8 @@ public class RestaurantMapActivity extends FragmentActivity implements OnMapRead
         restaurant = getIntent().getExtras().getString("Restaurant");
         String[] restaurantBody = restaurant.split(",");
 
+        TextView restaurantName = findViewById(R.id.RestaurantName);
+        restaurantName.setText(restaurantBody[0]);
 
         LatLng restaurant = new LatLng(Double.parseDouble(restaurantBody[1]), Double.parseDouble(restaurantBody[2]));
         mMap.addMarker(new MarkerOptions().position(restaurant).title(restaurantBody[0]));

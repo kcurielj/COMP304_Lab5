@@ -21,38 +21,38 @@
 
     <string-array name="Greek">
 
-        <item>Greek Restaurant 1</item>
-        <item>Greek Restaurant 2</item>
-        <item>Greek Restaurant 3</item>
-        <item>Greek Restaurant 4</item>
-        <item>Greek Restaurant 5</item>
+        <item>George the Greek,43.6286793,-79.820938</item>
+        <item>Dukkan Mediterranean Kitchen,43.7975834,-79.7060784</item>
+        <item>Volos Greek Cuisine,43.7975834,-79.7060784</item>
+        <item>Mezes,43.7975834,-79.7060784</item>
+        <item>Karbouzi,43.7975834,-79.7060784</item>
     </string-array>
 
     <string-array name="Japanese">
 
-        <item>Japanese Restaurant 1</item>
-        <item>Japanese Restaurant 2</item>
-        <item>Japanese Restaurant 3</item>
-        <item>Japanese Restaurant 4</item>
-        <item>Japanese Restaurant 5</item>
+        <item>Jumi Gozen Bar,43.7974123,-79.7060789</item>
+        <item>Koke Teppanyaki and Bbq,43.8436575,-79.3559276</item>
+        <item>Miku Toronto,43.6411481,-79.657685</item>
+        <item>Minami Toronto,43.6467728,-79.3882125</item>
+        <item>JaBistro,43.6496875,-79.3881275</item>
     </string-array>
 
     <string-array name="Korean">
 
-        <item>Korean Restaurant 1</item>
-        <item>Korean Restaurant 2</item>
-        <item>Korean Restaurant 3</item>
-        <item>Korean Restaurant 4</item>
-        <item>Korean Restaurant 5</item>
+        <item>Stamp’s Lane Seafood Bar,43.6500905,-79.4505166</item>
+        <item>KoSam Korean Restaurant and Bar,43.7984521,-79.3687852</item>
+        <item>Korean Village Restaurant,43.6644441,-79.4143558</item>
+        <item>Daldongnae Korean BBQ,43.7897286,-79.4182717</item>
+        <item>Kimchi Korea House,43.6552472,-79.3855068</item>
     </string-array>
 
     <string-array name="Indian">
 
-        <item>Indian Restaurant 1</item>
-        <item>Indian Restaurant 2</item>
-        <item>Indian Restaurant 3</item>
-        <item>Indian Restaurant 4</item>
-        <item>Indian Restaurant 5</item>
+        <item>Leela Indian Food Bar,43.6655166,-79.4734783</item>
+        <item>Aanch,43.6448763,-79.3910475</item>
+        <item>Raj Mahal Indian Cuisine,43.7867551,-79.4687467</item>
+        <item>Pukka,43.6810587,-79.4291704</item>
+        <item>The Copper Chimney,43.7362478,-79.420455</item>
     </string-array>
     <string name="title_activity_restaurant">RestaurantActivity</string>
     <!-- Strings used for fragments for navigation -->
